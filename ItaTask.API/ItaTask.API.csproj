@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <InvariantGlobalization>false</InvariantGlobalization>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.12" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="8.0.12" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="8.0.12" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.12"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ItaTask.Application\ItaTask.Application.csproj" />
+      <ProjectReference Include="..\ItaTask.Domain\ItaTask.Domain.csproj" />
+      <ProjectReference Include="..\ItaTask.Infrastructure\ItaTask.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\" />
+    </ItemGroup>
+
+</Project>
